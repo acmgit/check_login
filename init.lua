@@ -4,6 +4,7 @@ minetest.register_on_prejoinplayer(function(name, ip)
 		return
 	
 	else
+		-- Check if Name has more than 2 Numbers in it
 		local count = 0
 		for char = 1, #name do
 			local c = name:sub(char,char)
