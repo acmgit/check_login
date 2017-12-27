@@ -17,7 +17,8 @@ function check_login.check_name(name)
 	local valid = true
 
 	for key, value in ipairs(check_login.namefilter) do
-		if string.find(string.lower(name), string.lower(value)) ~= nil then
+		--if string.find(string.lower(name), string.lower(value)) ~= nil then -- name = part of an entry on the blacklist
+		if( string.lower(name) == string.lower(value) ) then -- name is exact the name in the blacklist
 			valid = false
 		end -- if string.find
 
