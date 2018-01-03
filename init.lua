@@ -72,3 +72,5 @@ end)
 --]]
 
 check_login.namefilter = login_blacklist
+
+print("[MOD] " .. minetest.get_current_modname() .. " loaded.")
