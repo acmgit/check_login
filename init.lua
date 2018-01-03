@@ -45,7 +45,8 @@ function check_login.get_numbers(name)
 end -- check_numbers()
 
 minetest.register_on_prejoinplayer(function(name, ip)
-	if name == "singleplayer" or name == admin then
+
+	if name == "singleplayer" or name == minetest.setting_get("name") then
 		return
 	
 	else
